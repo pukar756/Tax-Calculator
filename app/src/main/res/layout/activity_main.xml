@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="25dp"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TAX CALCULATOR"
+        android:layout_marginBottom="50dp"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Enter your Salary Here"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/buttondesign"
+        android:padding="10dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:background="@drawable/buttondesign"
+            android:textColor="@android:color/white"
+            android:text="Calculate TAX"
+            android:id="@+id/btnTaxCalc"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:background="@drawable/buttondesign"
+            android:textColor="@android:color/white"
+            android:text="Clear"
+            android:id="@+id/btnClear"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:padding="5dp"
+            android:text="TAX Payable "
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Tax Amount"
+            android:textColor="@android:color/white"
+            android:id="@+id/tvResult"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="per annum"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
